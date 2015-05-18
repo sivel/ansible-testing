@@ -3,7 +3,7 @@ Python module to help test Ansible, specifically ansible modules
 
 ## Current Tests
 
-1. `main()` at the bottom of the file (warning)
+1. `main()` at the bottom of the file
 1. Module includes `from ansible.module_utils` imports
 1. `module_utils` imports at the bottom
 1. Invalid `module_utils` import
