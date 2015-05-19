@@ -16,6 +16,7 @@ Python module to help test Ansible, specifically ansible modules
 1. Has `RETURN` (warning)
 1. `import json` found (warning)
 1. Python syntax error
+1. Module calls `sys.exit()`
 
 #### Notes
 
