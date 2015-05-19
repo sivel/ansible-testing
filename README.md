@@ -5,19 +5,25 @@ Python module to help test or validate Ansible, specifically ansible modules
 
 ### Modules
 
+#### Errors
+
 1. Interpreter line is `#!/usr/bin/python`
 1. `main()` at the bottom of the file
 1. Module includes `from ansible.module_utils` imports
-1. `module_utils` imports at the bottom (error/warning)
+1. `module_utils` imports at the bottom
 1. Invalid `module_utils` import
-1. Try/Except `HAS_` expression (warning)
 1. Has `DOCUMENTATION` and is valid YAML
 1. Has `EXAMPLES`
-1. Has `RETURN` (warning)
-1. `import json` found (warning)
 1. Python syntax error
 1. Module calls `sys.exit()`
 1. Missing GPLv3 license header in module
+
+#### Warnings
+
+1. `module_utils` imports at the bottom
+1. Try/Except `HAS_` expression
+1. Has `RETURN`
+1. `import json` found
 
 #### Notes
 
