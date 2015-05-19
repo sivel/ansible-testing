@@ -17,6 +17,7 @@ Python module to help test Ansible, specifically ansible modules
 1. `import json` found (warning)
 1. Python syntax error
 1. Module calls `sys.exit()`
+1. Missing GPLv3 license header in module
 
 #### Notes
 
