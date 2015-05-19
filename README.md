@@ -8,7 +8,7 @@ Python module to help test Ansible, specifically ansible modules
 1. Interpreter line is `#!/usr/bin/python`
 1. `main()` at the bottom of the file
 1. Module includes `from ansible.module_utils` imports
-1. `module_utils` imports at the bottom (warning)
+1. `module_utils` imports at the bottom (error/warning)
 1. Invalid `module_utils` import
 1. Try/Except `HAS_` expression (warning)
 1. Has `DOCUMENTATION` and is valid YAML
@@ -21,7 +21,7 @@ Python module to help test Ansible, specifically ansible modules
 
 #### Notes
 
-1. I would like to find a way to error for some `module_utils` imports that do not appear at the bottom
+1. `module_utils` imports not at bottom may be error or warning depending on the import
 
 ### Module Directories (Python Packages)
 
