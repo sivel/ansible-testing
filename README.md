@@ -1,7 +1,7 @@
 # ansible-testing
-Python module to help test Ansible, specifically ansible modules
+Python module to help test or validate Ansible, specifically ansible modules
 
-## Current Tests
+## Current Validations
 
 ### Modules
 
