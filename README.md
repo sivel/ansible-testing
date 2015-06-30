@@ -15,6 +15,7 @@ Python module to help test or validate Ansible, specifically ansible modules
 1. Has `DOCUMENTATION` and is valid YAML
 1. Has `EXAMPLES`
 1. Python syntax error
+1. Python module uses tabbed indentation
 1. Module calls `sys.exit()`
 1. Missing GPLv3 license header in module
 1. Powershell module missing `WANT_JSON`
