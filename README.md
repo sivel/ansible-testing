@@ -7,30 +7,30 @@ Python module to help test or validate Ansible, specifically ansible modules
 
 #### Errors
 
-1. Interpreter line is `#!/usr/bin/python`
-1. `main()` at the bottom of the file
-1. Module includes `from ansible.module_utils` imports
-1. `module_utils` imports at the bottom
+1. Interpreter line is not `#!/usr/bin/python`
+1. `main()` not at the bottom of the file
+1. Module does not include `from ansible.module_utils.basic import *`
+1. `module_utils` imports at the top (excluding whitelisted `module_utils`)
 1. Invalid `module_utils` import
-1. Has `DOCUMENTATION` and is valid YAML
-1. Has `EXAMPLES`
-1. Python syntax error
-1. Python module uses tabbed indentation
-1. Module calls `sys.exit()`
+1. Missing `DOCUMENTATION` or invalid YAML
+1. Missing `EXAMPLES`
+1. Invalid Python Syntax
+1. Tabbed indentation
+1. Use of `sys.exit()`
 1. Missing GPLv3 license header in module
 1. Powershell module missing `WANT_JSON`
 1. Powershell module missing `REPLACER_WINDOWS`
 
 #### Warnings
 
-1. `module_utils` imports at the bottom
-1. Try/Except `HAS_` expression
-1. Has `RETURN`
+1. Whitelisted `module_utils` imports at the top
+1. Try/Except `HAS_` expression missing
+1. Missing `RETURN`
 1. `import json` found
 
 #### Notes
 
-1. `module_utils` imports not at bottom may be error or warning depending on the import
+1. `module_utils` imports not at bottom may be error or warning depending on the import.
 
 ### Module Directories (Python Packages)
 
