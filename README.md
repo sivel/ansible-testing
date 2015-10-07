@@ -27,6 +27,7 @@ Python module to help test or validate Ansible, specifically ansible modules
 1. Try/Except `HAS_` expression missing
 1. Missing `RETURN`
 1. `import json` found
+1. Module contains duplicate globals from basic.py
 
 #### Notes
 
