@@ -56,7 +56,7 @@ except:
 
 
 setup(
-    name='ansible_testing',
+    name='ansible-testing',
     version=find_version('ansible_testing/__init__.py'),
     description=('Python module to help test or validate Ansible, '
                  'specifically ansible modules'),
