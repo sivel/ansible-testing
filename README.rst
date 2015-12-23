@@ -11,6 +11,30 @@ This module must be installed alongside the current development
 release of Ansible to appropriately test the current developemnt
 state of modules.
 
+Usage
+~~~~~
+
+::
+
+    pip install git+https://github.com/ansible/ansible.git@devel#egg=ansible
+    pip install git+https://github.com/sivel/ansible-testing.git#egg=ansible_testing
+    ansible-validate-modules /path/to/ansible-modules-extras
+
+Help
+~~~~
+
+::
+
+    usage: ansible-validate-modules [-h] [-w] [--exclude EXCLUDE] modules
+
+    positional arguments:
+      modules            Path to module or module directory
+
+    optional arguments:
+      -h, --help         show this help message and exit
+      -w, --warnings     Show warnings
+      --exclude EXCLUDE  RegEx exclusion pattern
+
 Current Validations
 -------------------
 
