@@ -30,17 +30,20 @@ Errors
 #. Missing ``EXAMPLES``
 #. Invalid Python Syntax
 #. Tabbed indentation
-#. Use of ``sys.exit()``
+#. Use of ``sys.exit()`` instead of ``exit_json`` or ``fail_json``
 #. Missing GPLv3 license header in module
 #. Powershell module missing ``WANT_JSON``
 #. Powershell module missing ``REPLACER_WINDOWS``
+#. New modules have the correct ``version_added``
+#. Modules should not import requests, instead use ``ansible.module_utils.urls``
+#. Missing ``RETURN`` for new modules
 
 Warnings
 ^^^^^^^^
 
 #. Whitelisted ``module_utils`` imports at the top
 #. Try/Except ``HAS_`` expression missing
-#. Missing ``RETURN``
+#. Missing ``RETURN`` for existing modules
 #. ``import json`` found
 #. Module contains duplicate globals from basic.py
 
