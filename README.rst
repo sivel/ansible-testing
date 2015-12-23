@@ -8,7 +8,7 @@ Installation
 ------------
 
 This module must be installed alongside the current development
-release of Ansible to appropriately test the current developemnt
+release of Ansible to appropriately test the current development
 state of modules.
 
 Usage
