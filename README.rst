@@ -59,6 +59,7 @@ Errors
 #. Powershell module missing ``WANT_JSON``
 #. Powershell module missing ``REPLACER_WINDOWS``
 #. New modules have the correct ``version_added``
+#. New arguments have the correct ``version_added``
 #. Modules should not import requests, instead use ``ansible.module_utils.urls``
 #. Missing ``RETURN`` for new modules
 
