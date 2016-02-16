@@ -57,7 +57,7 @@ Errors
 #. Use of ``sys.exit()`` instead of ``exit_json`` or ``fail_json``
 #. Missing GPLv3 license header in module
 #. Powershell module missing ``WANT_JSON``
-#. Powershell module missing ``REPLACER_WINDOWS``
+#. Powershell module missing ``POWERSHELL_COMMON``
 #. New modules have the correct ``version_added``
 #. New arguments have the correct ``version_added``
 #. Modules should not import requests, instead use ``ansible.module_utils.urls``
