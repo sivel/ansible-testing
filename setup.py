@@ -69,6 +69,7 @@ setup(
     packages=find_packages(exclude=['tests', 'tests.*']),
     install_requires=[
         'ansible',
+        'voluptuous==0.8.8',
     ],
     entry_points={
         'console_scripts': [
