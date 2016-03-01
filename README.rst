@@ -50,7 +50,9 @@ Errors
 #. ``module_utils`` imports at the top (excluding whitelisted
    ``module_utils``)
 #. Invalid ``module_utils`` import
-#. Missing ``DOCUMENTATION`` or invalid YAML
+#. Missing ``DOCUMENTATION``
+#. Documentation is invalid YAML
+#. Invalid schema for ``DOCUMENTATION``
 #. Missing ``EXAMPLES``
 #. Invalid Python Syntax
 #. Tabbed indentation
