@@ -46,10 +46,7 @@ Errors
 
 #. Interpreter line is not ``#!/usr/bin/python``
 #. ``main()`` not at the bottom of the file
-#. Module does not include ``from ansible.module_utils.basic import *``
-#. ``module_utils`` imports at the top (excluding whitelisted
-   ``module_utils``)
-#. Invalid ``module_utils`` import
+#. Module does not import ``ansible.module_utils.basic``
 #. Missing ``DOCUMENTATION``
 #. Documentation is invalid YAML
 #. Invalid schema for ``DOCUMENTATION``
@@ -68,17 +65,10 @@ Errors
 Warnings
 ^^^^^^^^
 
-#. Whitelisted ``module_utils`` imports at the top
 #. Try/Except ``HAS_`` expression missing
 #. Missing ``RETURN`` for existing modules
 #. ``import json`` found
 #. Module contains duplicate globals from basic.py
-
-Notes
-^^^^^
-
-#. ``module_utils`` imports not at bottom may be error or warning
-   depending on the import.
 
 Module Directories (Python Packages)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
