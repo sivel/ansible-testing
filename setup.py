@@ -72,6 +72,7 @@ setup(
     install_requires=[
         'ansible',
         'voluptuous==0.8.8',
+        'mock',
     ],
     entry_points={
         'console_scripts': [
