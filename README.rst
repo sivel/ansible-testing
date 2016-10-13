@@ -1,6 +1,8 @@
 ansible-testing
 ===============
 
+WARNING: This repository is no longer active, the code has been merged into the main `Ansible <https://github.com/ansible/ansible>`_ repository.
+
 Python module to help test or validate Ansible, specifically ansible
 modules
 
